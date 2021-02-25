@@ -214,7 +214,7 @@ a{
 -webkit-border-radius: 87px 23px 87px 19px;
 } */
 
-.paper {
+.paper { 
   background: #fff;
   padding: 30px;
   position: relative;
@@ -226,7 +226,7 @@ a{
   margin-right:5%;
   border: 5px solid white;
   box-sizing: border-box;
-  font-family:Candara Light;
+  font-family:Raleway;
   overflow-y:hidden;
   background: #fff;
   transition-property:all;
@@ -236,14 +236,23 @@ a{
 }
 
 .about{
-  font-size:14px;
+  opacity:0;
+transform:translate(0px,-50px);
+transition-property:all;
+transition-duration:1s;
+}
+
+
+.helloAnimation{
+  height:300px;
+  width:300px; 
+  margin-left:80px;
 }
 
 
 
 
-
-@media only screen and (min-width:768px){
+@media only screen and (min-width:738px){
   .logo{
   border:3px solid white;
   margin:20px;  
@@ -273,9 +282,18 @@ a{
   .contact{
     width: 200px;
     height: 200px;
-   margin-top:35px;
+   margin-top:40px;
    margin-left:16px;
   }
+
+  
+.helloAnimation{
+  margin-top:-25px;
+  height:350px;
+  width:350px; 
+  margin-left:50%;
+
+}
 }
 
 
@@ -306,49 +324,15 @@ a{
 .contact{
   width: 200px;
    height: 200px;
-  margin-left:50px;
+  margin-left:50%;
 }
-.box {
-  position: relative;
-  margin: 40px auto;
-  width: 400px;
-  height: 350px;
-  background: #fff;
-  border-radius: 2px;
+.helloAnimation{
+  height:400px;
+  width:400px; 
+  margin-left:560px;
 }
+.about{
+transform:translate(0px,-90px);
 
-.box::before,
-.box::after {
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  width: 40%;
-  height: 10px;
-  box-shadow: 0 5px 14px rgba(0,0,0,.7);
-  z-index: -1;
-  transition: all .3s ease-in-out;
-}
-
-.box::before {
-  left: 15px;
-  transform: skew(-5deg) rotate(-5deg);
-}
-
-.box::after {
-  right: 15px;
-  transform: skew(5deg) rotate(5deg);
-}
-
-.box:hover::before,
-.box:hover::after {
-  box-shadow: 0 2px 14px rgba(0,0,0,.4);
-}
-
-.box:hover::before {
-  left: 5px;
-}
-
-.box:hover::after {
-  right: 5px;
 }
 }
