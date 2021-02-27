@@ -243,15 +243,6 @@ transition-duration:1s;
 }
 
 
-.helloAnimation{
-  height:300px;
-  width:300px; 
-  margin-left:80px;
-}
-
-
-
-
 @media only screen and (min-width:738px){
   .logo{
   border:3px solid white;
@@ -286,13 +277,9 @@ transition-duration:1s;
    margin-left:16px;
   }
 
-  
-.helloAnimation{
-  margin-top:-25px;
-  height:350px;
-  width:350px; 
-  margin-left:50%;
-
+   
+.about{
+  margin-top:20px;
 }
 }
 
@@ -326,11 +313,7 @@ transition-duration:1s;
    height: 200px;
   margin-left:50%;
 }
-.helloAnimation{
-  height:400px;
-  width:400px; 
-  margin-left:560px;
-}
+
 .about{
 transform:translate(0px,-90px);
 
