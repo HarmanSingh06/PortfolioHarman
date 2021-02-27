@@ -216,7 +216,7 @@ a{
 
 .paper { 
   background: #fff;
-  padding: 10px;
+  padding: 20px;
   position: relative;
   margin-top:4%;
   margin-bottom:4%;
@@ -276,13 +276,13 @@ transition-duration:1s;
    margin-top:40px;
    margin-left:16px;
   }
-
-   
+  .paper { 
+    padding: 30px;
+  }
 .about{
   margin-top:20px;
 }
 }
-
 
 
 /* For Laptops and desktops */
@@ -309,13 +309,10 @@ transition-duration:1s;
   font-size:30px;
 }
 .contact{
-  width: 200px;
-   height: 200px;
-  margin-left:50%;
+  margin-left:20%;
 }
-
 .about{
-transform:translate(0px,-90px);
+transform:translate(0px,-70px);
 
 }
 }

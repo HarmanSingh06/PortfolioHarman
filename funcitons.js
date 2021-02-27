@@ -32,7 +32,7 @@ function displayAbout(){
                 if(screen.width > 1000){
                         if(document.body.scrollTop > 120 || document.documentElement.scrollTop > 120){
                                         document.getElementById("about").style.opacity = "1"
-                                        document.getElementById("about").style.transform = "translate(0px,-60px)"
+                                        document.getElementById("about").style.transform = "translate(0px,-40px)"
                                 }
                         }
 } 
