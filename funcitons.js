@@ -36,7 +36,15 @@ function displayAbout(){
                                 }
                         }
 } 
-// document.addEventListener('click', closeNav)
+
+
+
+//scrolling effect
+function scrollAbout(){
+        window.scrollTo(0,200);
+        closeNav();
+}
+
 function closeNav() {
         document.getElementById("sideNav").style.width = "0px"
 }
