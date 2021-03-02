@@ -2,6 +2,62 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,300");
 
+/* Fixed Social Media logos */
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  display:none;
+  /* transition-property:all;
+  transition-duration:1s; */
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.github{
+  background: #6e5494;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+/* social media logos engding */
 html,body{
   margin:0;
   height:120%;
@@ -282,9 +338,10 @@ transition-duration:1s;
 .about{
   margin-top:20px;
 }
+.icon-bar {
+  display:block;
 }
-
-
+}
 /* For Laptops and desktops */
 @media only screen and (min-width:1000px){
 .logo{
@@ -315,4 +372,5 @@ transition-duration:1s;
 transform:translate(0px,-70px);
 
 }
+
 }

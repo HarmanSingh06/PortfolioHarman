@@ -1,4 +1,6 @@
 function openNav() {
+        
+hideIcons();
 if(screen.width > 340 && screen.width < 740){
     if (document.getElementById("sideNav").style.width == "" || document.getElementById("sideNav").style.width == "0px") return document.getElementById("sideNav").style.width = "200px";  
     else return closeNav()
@@ -13,6 +15,12 @@ if(screen.width > 738){
         if (document.getElementById("sideNav").style.width == "" || document.getElementById("sideNav").style.width == "0px") return document.getElementById("sideNav").style.width = "270px";  
         else return closeNav()
 }
+
+}
+
+function hideIcons(){
+        if(document.getElementById("sideNav").style.width == "" || document.getElementById("sideNav").style.width == "0px") return  document.getElementById("icons").style.opacity = "0"
+        else return document.getElementById("icons").style.opacity = "1"
 }
 window.onscroll = function() {displayAbout()};
 
@@ -46,5 +54,6 @@ function scrollAbout(){
 }
 
 function closeNav() {
-        document.getElementById("sideNav").style.width = "0px"
+        document.getElementById("sideNav").style.width = "0px";
+        document.getElementById("icons").style.opacity = "1"
 }
