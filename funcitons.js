@@ -1,3 +1,4 @@
+
 function openNav() {
         
 hideIcons();
@@ -43,6 +44,7 @@ function displayAbout(){
                                         document.getElementById("about").style.transform = "translate(0px,-40px)"
                                 }
                         }
+                     
 } 
 
 
@@ -58,3 +60,16 @@ function closeNav() {
         document.getElementById("icons").style.opacity = "1"
 }
 
+
+
+const loader = document.querySelector(".loader");
+const wrapper = document.querySelector(".wrapper")
+window.onload = function(){
+  setTimeout(function(){
+    loader.style.opacity = "0";
+    wrapper.style.display = "block"
+    setTimeout(function(){
+      loader.style.display = "none";
+    }, 800);
+  },1800);
+}
